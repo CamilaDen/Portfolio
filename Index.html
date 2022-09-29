@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Personal</title>
     <link rel="Stylesheet" href="Style.css">
+    <script src="codigo.js"></script>
 </head>
 <body>
+    
     <header>
-        <h3>Camila Denise Goncalves</h3>
+        <h3 class="nombre">Camila Denise Gonçalves</h3>
     </header>
     <section class="primerBloque">
         <div>
@@ -17,16 +19,30 @@
             <h3 id="desarrolloPresentacion">Soy Camila Denise Goncalves, programadora...</h3>
         </div>
     </section>
-    <section class="segundoBloque">
     <br>
-
+    <section class="segundoBloque">
+        <div>
+            <p>Algunos conocimientos...</p>
+        </div>
+    </section>
+    <section id="formulario">
+        <div>
+            <h4>Obtener Curriculum Vitae</h4>
+            <p> </p>
+            <label for="">Nombre:</label>
+            <input type="text" id="txtNombre">
+            <label for="">Correo:</label>
+            <input type="text" id="txtCorreo">
+            <button onclick="saludar()">Enviar</button>    
+        </div>
     </section>
 </body>
 <footer>
-    <div>
-        <h6>Obtener Curriculum Vitae</h6>
-        <p> </p>
-        <p>Me podes encontrar en: github, LinkedIn</p>
+    <br>
+    <div id="contactos">
+        <p id="textoContacto">Me podras encontrar en:</p>
+        <a id="github" href="#"><img src="icons8-github-50.png" alt=""></a>
+        <a id="linkedIn" href="#"><img src="icons8-linkedin-50.png" alt=""></a>
     </div>
 </footer>
 </html>
