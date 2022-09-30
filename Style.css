@@ -2,7 +2,8 @@ body{
     background-image: url("https://img.freepik.com/free-vector/elegant-pastel-color-beautiful-background_1017-33496.jpg?w=826&t=st=1664406149~exp=1664406749~hmac=b5b79224c24680d83a784c738f593b4388602703eef778ca1ff6cc21f2f99697");
     background-size: cover;
     /*background-color: #b284da;*/
-    margin:0px;
+    margin:0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 /*.nombre{
     @font-face {
@@ -14,7 +15,6 @@ body{
 }*/
 header{
     height: 70px;
-  
     background-color: #fffcfc63;
     color:#000000;
     display: flex;
@@ -22,47 +22,69 @@ header{
     padding-left: 50px;
     border-width: 2px;
     border-style: outset;
-
+    font-size:medium;
+    padding-bottom: 20px;
 }
 .primerBloque{
-    background-color: #fffcfc63;
+    /*background-color: #fffcfc63;*/
     width:70%;
     margin:  10px auto 10px auto;
     padding-block: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-style:groove;
-    border-radius: 50px;
-    border-width: 2px;
-    border-style:outset;
+    font-size: xx-large;
     
-
 }
-.segundoBloque{
-    background-color: #fffcfc63;
-    width:70%;
-    margin:  40px auto 40px auto;
-    padding-block: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-style:groove;
-    border-radius: 50px;
-    border-width: 2px;
-    border-style:outset;
+.exp{
+    text-align: center;
+    font-weight: 600;
+    font-size:x-large;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 #letrasGrandes{
     color: #000000;
     
 }
+.hoja{
+    background-color: #fffcfc63;
+    width: 80%;
+    margin: 20px auto 20px auto;
+    flex-direction: row;
+    border-style:groove;
+    border-width: 2px;
+    border-style:outset;
+    justify-content: center;
+    display: flex;
+    padding-block: center;
+}
+.Conocimientos{
+    position:sticky;
+    margin: 20px auto 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(200px, 200px);
+    /*width: 40px;
+    height: 60px;
+    */
+    align-items: center;
+    -ms-flex-align: center;
+
+}
+#im{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 #formulario{
     background-color: #fffcfc63;
-    width:70%;
+    width:80%;
     margin: 50px auto 50px auto;
     justify-content: center;
     border-style:groove;
-    border-radius: 50px;
     border-width: 2px;
     border-style:outset;
     padding-block: center;
@@ -79,7 +101,7 @@ button{
 }
 footer{
     height: 80px;
-    position: fixed;
+    position: flex;
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -95,4 +117,9 @@ footer{
 #github{
 
     padding-right: 40px;
+}
+@media(max-width:700px){
+    header{
+        flex-direction: column;
+    }
 }
