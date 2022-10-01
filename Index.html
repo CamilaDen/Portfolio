@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,47 +11,39 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="" alt="">
-            <h2 class="nombre">Camila Denise Gonçalves</h2>
+        <div class="container">
+            <div class="logo">
+                <img src="img/perfilmujer.png" alt="logo mujer">
+                <h2>Camila Denise Gonçalves</h2>
+            </div>
+            <nav>
+                <a href="https://github.com/CamilaDen">Sobre Mi</a>
+            </nav>
         </div>
-        
     </header>
-    <section class="hoja">
-        <div class="primerBloque">
-            <h1 id="letrasGrandes">Hola! Bienvenido a mi Portfolio Personal...</h1>
-            <h3 id="desarrolloPresentacion">Soy Camila Denise Goncalves, programadora...</h3>
+
+    <section id="hero">  
+        <div> <h1 >Hola! Bienvenido a mi Portfolio Personal...</h1><br> </div>
+        <!--<hr>-->
+        <h3 id="desarrolloPresentacion">Soy Camila, estudiante de la UTN, programadora...</h3>
         </div>
-        <br>
-    </section>
+    </section> 
+
     <section id="hoja2"></section>
-        <div class="exp">
-            <p>Tengo algo de experiencia en:</p>
-        <br>
-            <table class="Conocimientos">
-                <thead> 
-                    <tr> <th></th> <th></th> <th></th> </tr> 
-                </thead> 
-                <tbody> 
-                    <tr> 
-                        <td> <img id= "im" src="img/c.png" alt="lenguaje c" style="width: 70px; height: 70px;"> </td> 
-                        <td> <img id= "im" src="img/c++png.png" alt="lenguaje c++" style="width: 65px; height: 65px;"> </td> 
-                        <td> <img id= "im" src="img/csharp.png" alt="lenguaje c#" style="width: 70px; height: 70px;"> </td> 
-                        
-                    </tr> 
-                        <td> <img id= "im" src="img/sql.png" alt="SQL" style="width: 90px; height: 50px;"></td> 
-                        <td> <img id= "im" src="img/Atmel_logo.svg.png" alt="Atmel" style="width: 90px; height: 50px;"></td> 
-                        <td> <img id= "im" src="img/Logo_freeRTOS.png" alt="freeRTOS" style="width: 90px; height: 50px;"></td> 
-                    </tr> 
-                    <tr>
-                        <td> <img id= "im" src="img/html.png" alt="HTML Logo" style="width: 50px; height: 70px;"> </td> 
-                        <td><img id= "im" src="img/CSS.png" alt="CSS Logo" style="width: 50px; height: 70px;"></td> 
-                        <td> <img id= "im" src="img/js.png" alt="JS Logo" style="width: 50px; height: 70px;"> </td> 
-                    </tr> 
-                </tbody>
-            </table>
+        <div class="container">
+            <p>Tengo experiencia en:<br></p>       
+            <img id= "im" src="img/c.png" alt="lenguaje c" style="width: 70px; height: 70px;"> 
+            <img id= "im" src="img/c++png.png" alt="lenguaje c++" style="width: 65px; height: 65px;">  
+            <img id= "im" src="img/csharp.png" alt="lenguaje c#" style="width: 70px; height: 70px;">                         
+            <img id= "im" src="img/sql.png" alt="SQL" style="width: 90px; height: 50px;"> 
+            <img id= "im" src="img/Atmel_logo.svg.png" alt="Atmel" style="width: 90px; height: 50px;">
+            <img id= "im" src="img/Logo_freeRTOS.png" alt="freeRTOS" style="width: 90px; height: 50px;">  
+            <img id= "im" src="img/espressif.png" alt="Espressif Logo" style="width: 70px; height: 70px;">         
+            <img id= "im" src="img/html.png" alt="HTML Logo" style="width: 50px; height: 70px;"> 
+            <img id= "im" src="img/CSS.png" alt="CSS Logo" style="width: 50px; height: 70px;">                         
         </div>
     </section>
+
     <section id="formulario">
         <div>
             <h4>Obtener Curriculum Vitae</h4>
@@ -62,13 +55,23 @@
             <button onclick="saludar()">Enviar</button>    
         </div>
     </section>
+
 </body>
 <footer>
     <br>
-    <div id="contactos">
+    <div class="container">
         <p id="textoContacto">Me podras encontrar en:</p>
-        <a id="github" href="#"><img src="icons8-github-50.png" alt=""></a>
-        <a id="linkedIn" href="#"><img src="icons8-linkedin-50.png" alt=""></a>
+        <a id="github" href="https://github.com/CamilaDen" target="_blank">
+            <img src="icons8-github-50.png" alt="GitHub">
+        </a>
+        <a id="linkedIn" href="https://www.linkedin.com/in/camila-goncalves-3199a5224/" target="_blank">
+            <img src="icons8-linkedin-50.png" alt="linkedIn">
+        </a>
+        <div class="copyrighy">
+            <small>Copyright © Camila Denise Goncalves 2022</small>
+        </div>
     </div>
+    
 </footer>
+<script src="https://kit.fontawesome.com/74ecd0d476.js" crossorigin="anonymous"></script>
 </html>
